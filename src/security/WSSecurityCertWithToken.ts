@@ -127,7 +127,7 @@ export class WSSecurityCertWithToken implements ISecurity {
     }
     let usernameToken = '';
     if (this.username) {
-      usernameToken = `<wsse:UsernameToken wsu:Id="_1" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">` +
+      usernameToken = `<wsse:UsernameToken wsu:Id="_4" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">` +
         `<wsse:Username>${this.username}</wsse:Username> ` +
         `<wsse:Password>${this.password}</wsse:Password> ` +
         `</wsse:UsernameToken>`;
